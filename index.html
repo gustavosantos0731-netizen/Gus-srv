@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>gus.srv</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav {
+      background: #e60000;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .banner {
+      background: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e');
+      background-size: cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .servicos {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .card {
+      background: #f4f4f4;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    button {
+      padding: 12px 20px;
+      background: #25D366;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>gus.srv</h1>
+  <p>Construção, reformas e manutenção em Osasco</p>
+</header>
+
+<nav>
+  <a href="#sobre">Sobre</a>
+  <a href="#servicos">Serviços</a>
+  <a href="#contato">Contato</a>
+</nav>
+
+<div class="banner">
+  <h2>Seu projeto em boas mãos</h2>
+  <p>Qualidade, confiança e preço justo</p>
+</div>
+
+<div class="section" id="sobre">
+  <h2>Sobre nós</h2>
+  <p>Atuamos em Osasco e região oferecendo serviços de construção, reformas e manutenção com qualidade e compromisso.</p>
+</div>
+
+<div class="section" id="servicos">
+  <h2>Nossos serviços</h2>
+
+  <div class="servicos">
+    <div class="card">Construção de casas</div>
+    <div class="card">Reformas em geral</div>
+    <div class="card">Manutenção residencial e comercial</div>
+  </div>
+
+</div>
+
+<div class="section" id="contato">
+  <h2>Contato</h2>
+  <p>📍 Osasco - SP</p>
+  <p>📞 (11) 93004-1839</p>
+
+  <button onclick="whatsapp()">Falar no WhatsApp</button>
+</div>
+
+<footer>
+  <p>© 2026 gus.srv</p>
+</footer>
+
+<script>
+  function whatsapp() {
+    window.open("https://wa.me/5511930041839", "_blank");
+  }
+</script>
+
+</body>
+</html>
